@@ -1,24 +1,30 @@
 import logo from './logo.svg';
 import './App.css';
 
+// import UseReducer from './reducer';
+
+// import UseReducerYT from './useReducerYT';
+// import Demo from './demo';
+
+import UseRefTest1 from './useRefTest1';
+
+import UseRefTest2 from './useRefTest2';
+
+import TickTack from './tickTack/tickTack';
+
+
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      {/* <UseReducerYT/> */}
+
+      {/* <UseReducer/> */}
+
+      {/* <Demo/> */}
+      {/* <UseRefTest1/> */}
+      {/* <UseRefTest2/> */}
+      <TickTack/>
+     </div>
   );
 }
 
