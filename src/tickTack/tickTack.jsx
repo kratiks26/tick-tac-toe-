@@ -45,11 +45,11 @@ const TickTack = () => {
             setMessage(value+ "Wins");
             if(value ==="⭕"){
                 let count = playerOneCount;
-                setPlayerOneCount(count++)
+                setPlayerOneCount(count+1)
             }
             if(value ==="✖️"){
                 let count = playerTwoCount;
-                setPlayerTwoCount(count++)
+                setPlayerTwoCount(count+1)
             }
         }
         if((box.flat()).every((elem)=> elem !== false) && (count1 !==3 && count2 !== 3 && count3 !== 3 && count4 !== 3)){
@@ -85,10 +85,10 @@ const TickTack = () => {
 
             <div className="score-board">
             <div className='player-name-one'>
-            {firstUserName} "⭕"  : 
+            {firstUserName} "⭕"  : {playerOneCount}
             </div>
             <div className='player-name-two'>
-            : "✖️"{secondUserName} 
+            {playerTwoCount}: "✖️"{secondUserName} 
             </div>
             </div>
 
@@ -109,7 +109,13 @@ const TickTack = () => {
                 { message !== "" ?  <form className='form-box'>
                     <div className='form-div'>
                         <h1 className='message-tag'>{message}</h1>
-                        <button className='play-button'>Play Again</button>
+                        <button className='play-button' onClick={(e)=>{
+                            e.preventDefault();
+                            setBox([[false, false, false], [false, false, false], [false, false, false]]);
+                            setMessage("");
+
+                        }
+                            } >Play Again</button>
                     </div>
                 </form> :
                 ""
