@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/gitpagetest/static/css/main.30f9b83a.css",
-    "main.js": "/gitpagetest/static/js/main.d1c41d7a.js",
-    "static/js/787.295602a2.chunk.js": "/gitpagetest/static/js/787.295602a2.chunk.js",
-    "static/media/logo.svg": "/gitpagetest/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/gitpagetest/index.html",
-    "main.30f9b83a.css.map": "/gitpagetest/static/css/main.30f9b83a.css.map",
-    "main.d1c41d7a.js.map": "/gitpagetest/static/js/main.d1c41d7a.js.map",
-    "787.295602a2.chunk.js.map": "/gitpagetest/static/js/787.295602a2.chunk.js.map"
+    "main.css": "/tick-tac-toe/static/css/main.30f9b83a.css",
+    "main.js": "/tick-tac-toe/static/js/main.abc2fc79.js",
+    "static/js/787.295602a2.chunk.js": "/tick-tac-toe/static/js/787.295602a2.chunk.js",
+    "static/media/logo.svg": "/tick-tac-toe/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/tick-tac-toe/index.html",
+    "main.30f9b83a.css.map": "/tick-tac-toe/static/css/main.30f9b83a.css.map",
+    "main.abc2fc79.js.map": "/tick-tac-toe/static/js/main.abc2fc79.js.map",
+    "787.295602a2.chunk.js.map": "/tick-tac-toe/static/js/787.295602a2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.30f9b83a.css",
-    "static/js/main.d1c41d7a.js"
+    "static/js/main.abc2fc79.js"
   ]
 }
