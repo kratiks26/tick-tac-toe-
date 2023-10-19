@@ -13,6 +13,7 @@ body {
 .container-div{
     background-color: aqua;
     padding:100px;
+    padding-bottom: 147px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -22,7 +23,7 @@ body {
 .game-box{
     width: 312px;
     height: 308px;
-    border: 20px solid black;
+    border: 20px solid rgb(65, 65, 65);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -32,7 +33,7 @@ body {
 .box{
     width: 100px;
     height: 100px;
-    border: 2px solid black;
+    border: 2px solid rgb(65, 65, 65);
     display:flex;
     justify-content: center;
     align-items: center;
@@ -52,13 +53,13 @@ body {
 .form-div{
     width: 400px;
     height: 250px;
-    background-color: #ffbb00c4;
+    background-color:rgb(255, 204, 0);
     position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    border: 2px solid black;
+    border: 2px solid black;    
 }
 
 .message-tag{
@@ -73,7 +74,7 @@ body {
     bottom:30%;
     width: 200px;
     height:40px;
-    color: #ffb300;
+    color: gold;
     font-size: 20px;
     font-weight: bold;
     text-shadow: 20px  black ;
@@ -86,7 +87,7 @@ body {
 .modal-container{
     width: 400px;
     height: 355px;
-    background-color: #ffbb00;
+    background-color: gold;
     position: absolute; 
     bottom: 24%;
     left: 33%;  
@@ -94,7 +95,7 @@ body {
     justify-content: center; 
     align-items: center; 
     border-radius: 20px;
-    border: 5px solid grey;
+    border: 5px solid white;
 }
 
 .player{
@@ -110,7 +111,7 @@ body {
     font-size: 25px;
     font-weight: bold;
     color: white;
-    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-width: 0.5px;   
     -webkit-text-stroke-color: black;
     text-shadow: 2px 2px 3px black ;
 
@@ -139,12 +140,55 @@ body {
     /* background-color: red; */
     position: absolute;
     top:0%;
-    width:900px;
+    width:1000px;
     height: 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     padding-left: 50px;
     padding-right: 50px;
+    margin-top: 20px ;
+}
+
+.player-name-one{
+    /* background-color: gold;
+    border:2px solid white; */
+    width: 300px;
+    height: 50px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 30px;
+    padding-left: 10px; 
+    padding-right: 20px; 
+    color: white;
+    -webkit-text-stroke-width: 0.5px;   
+    -webkit-text-stroke-color: black;
+    text-shadow: 2px 2px 3px black ;
+}
+
+.name{
+    /* width: 200px;
+    overflow: hidden; */
+}
+
+
+.player-name-two{
+    /* background-color: gold;
+    border:2px solid white; */
+    width: 300px;
+    height: 50px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 30px;
+    padding-left: 10px; 
+    padding-right: 20px; 
+    color: white;
+    -webkit-text-stroke-width: 0.5px;   
+    -webkit-text-stroke-color: black;
+    text-shadow: 2px 2px 3px black ;
 }

@@ -6,8 +6,8 @@ const TickTack = () => {
     const [box, setBox] = useState([[false, false, false], [false, false, false], [false, false, false]]);
     const [value, setValue] = useState("⭕");
     const [message, setMessage] = useState("");
-    const [firstUserName, setFirstUserName] = useState("");
-    const [secondUserName, setSecondUserName] = useState("");
+    const [firstUserName, setFirstUserName] = useState("anonymous");
+    const [secondUserName, setSecondUserName] = useState("anonymous");
     const [playerOneCount, setPlayerOneCount] = useState(0);
     const [playerTwoCount, setPlayerTwoCount] = useState(0);
 
@@ -85,10 +85,10 @@ const TickTack = () => {
 
             <div className="score-board">
             <div className='player-name-one'>
-            {firstUserName} "⭕"  : {playerOneCount}
+            <div className='name'>{firstUserName}</div>  : {playerOneCount} ⭕
             </div>
             <div className='player-name-two'>
-            {playerTwoCount}: "✖️"{secondUserName} 
+            ✖️ {playerTwoCount}: <div className='name'>{secondUserName}</div>
             </div>
             </div>
 
