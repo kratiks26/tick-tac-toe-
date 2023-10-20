@@ -6,8 +6,8 @@ const TickTack = () => {
     const [box, setBox] = useState([[false, false, false], [false, false, false], [false, false, false]]);
     const [value, setValue] = useState("⭕");
     const [message, setMessage] = useState("");
-    const [firstUserName, setFirstUserName] = useState("anonymous");
-    const [secondUserName, setSecondUserName] = useState("anonymous");
+    const [firstUserName, setFirstUserName] = useState("Player 1");
+    const [secondUserName, setSecondUserName] = useState("Player 2");
     const [playerOneCount, setPlayerOneCount] = useState(0);
     const [playerTwoCount, setPlayerTwoCount] = useState(0);
 
@@ -68,11 +68,11 @@ const TickTack = () => {
                     <div className='box-appear'>
                         <div className='player one'>
                             <label className='label-name'>Player 1</label>
-                            <input value={firstUserName} onChange={(e)=> setFirstUserName(e.target.value)}/>
+                            <input onChange={(e)=> setFirstUserName(e.target.value)}/>
                         </div>
                         <div className='player two'>
                             <label className='label-name'>Player 2</label>
-                            <input value={secondUserName} onChange={(e)=> setSecondUserName(e.target.value)}/>
+                            <input  onChange={(e)=> setSecondUserName(e.target.value)}/>
                         </div>
 
                        <div className='player button'>
@@ -85,10 +85,10 @@ const TickTack = () => {
 
             <div className="score-board">
             <div className='player-name-one'>
-            <div className='name'>{firstUserName}</div>  : {playerOneCount} ⭕
+            <div className='name'>{firstUserName}</div> : {playerOneCount} ⭕
             </div>
             <div className='player-name-two'>
-            ✖️ {playerTwoCount}: <div className='name'>{secondUserName}</div>
+            ✖️ {playerTwoCount} : <div className='name'>{secondUserName}</div>
             </div>
             </div>
 
