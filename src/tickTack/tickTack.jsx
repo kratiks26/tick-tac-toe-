@@ -42,7 +42,7 @@ const TickTack = () => {
             val--  
         }
         if( count1==3 || count2 == 3 || count3 == 3 || count4 == 3){
-            setMessage(value+ "Wins");
+            setMessage(value+ "Won");
             if(value ==="⭕"){
                 let count = playerOneCount;
                 setPlayerOneCount(count+1)
@@ -66,16 +66,16 @@ const TickTack = () => {
             createPortal(
                 <div className='modal-container'>
                     <div className='box-appear'>
-                        <div className='player one'>
-                            <label className='label-name'>Player 1</label>
+                        <div className='player-name-input'>
+                            <label className='player-label-name'>Player 1</label>
                             <input onChange={(e)=> setFirstUserName(e.target.value)}/>
                         </div>
-                        <div className='player two'>
-                            <label className='label-name'>Player 2</label>
+                        <div className='player-name-input'>
+                            <label className='player-label-name'>Player 2</label>
                             <input  onChange={(e)=> setSecondUserName(e.target.value)}/>
                         </div>
 
-                       <div className='player button'>
+                       <div className='button-div'>
                        <button className='start-button' onClick={()=>setModal(false)}>Start</button>
                        </div>
                     </div>
@@ -92,7 +92,6 @@ const TickTack = () => {
             </div>
             </div>
 
-            {/* game code */}
                 <div className='game-box'>
                     {
                         box.map((arr, i) => {
@@ -106,7 +105,7 @@ const TickTack = () => {
                         })
                     }
                 </div>
-                { message !== "" ?  <form className='form-box'>
+                { message !== "" &&  <form className='form-box'>
                     <div className='form-div'>
                         <h1 className='message-tag'>{message}</h1>
                         <button className='play-button' onClick={(e)=>{
@@ -115,10 +114,9 @@ const TickTack = () => {
                             setMessage("");
 
                         }
-                            } >Play Again</button>
+                            }>Play Again</button>
                     </div>
-                </form> :
-                ""
+                </form>
 
                 }
                

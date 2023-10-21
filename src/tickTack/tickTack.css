@@ -1,194 +1,153 @@
-/* * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.container-div {
+  width: 100vw;
+  height: 100vh;
+  background-color: aqua;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
-html,
-body {
-    width: 1080px;
-    height: 720px;
-} */
+.game-box {
+  width: 24.4vw;
+  height: 52.3vh;
+  border: 4vh solid rgb(65, 65, 65);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
 
-.container-div{
-    background-color: aqua;
-    padding:100px;
-    padding-bottom: 147px;
+.box {
+  width: 7.8vw;
+  height: 7.8vw;
+  border: 0.4vh solid rgb(65, 65, 65);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4vw;
+}
+
+.form-box {
+  position: absolute;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.721);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.form-div {
+  width: 40vw;
+  height: 25vh;
+  background-color: rgb(255, 204, 0);
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border: 0.5vh solid rgb(58, 58, 58);
+  position: absolute;
+  bottom: 1%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.play-button {
+  width: 20vw;
+  height: 7vh;
+  color: white;
+  font-size: 3vh;
+  font-weight: bold;
+  background-color: rgb(255, 0, 0);
+  border: 0.5vh solid white;
+}
+
+.modal-container {
+  width: 30vw;
+  height: 60vh;
+  background-color: rgb(255, 217, 0);
+  position: absolute;
+  bottom: 19.4%;
+  left: 34.6%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3vh;
+  border: 1vh solid white;
+}
+
+.player-name-input {
+  margin-top: 3vh;
+  width: 25vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.player-label-name {
+  font-size: 4vh;
+  font-weight: bold;
+  color: white;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: black;
+  text-shadow: 2px 2px 3px black;
+}
+
+.start-button {
+  margin-top: 5vh;
+  color: white;
+  background-color: red;
+  font-size: 4.5vh;
+  font-weight: bolder;
+  border-color: aliceblue;
+  width: 10vw;
+  height: 8vh;
+  box-shadow: 2px 2px 3px rgb(0, 0, 0);
+}
+
+.button-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.score-board {
+  position: absolute;
+  top: 3%;
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.player-name-one {
+  width: 30vw;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 5vh;
+  color: white;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: black;
+  text-shadow: 0.2vw 0.2vw 0.3vw black;
+}
+
+.player-name-two {
+    width: 30vw;
+    height: 10vh;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
-}
-
-.game-box{
-    width: 312px;
-    height: 308px;
-    border: 20px solid rgb(65, 65, 65);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.box{
-    width: 100px;
-    height: 100px;
-    border: 2px solid rgb(65, 65, 65);
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 50px;
-}
-
-.form-box{
-    position: absolute;
-    z-index: 10;
-    background-color: rgba(0, 0, 0, 0.171);
-    padding-left:500px;
-    padding-right:500px;
-    padding-top:180px;
-    padding-bottom:180px;
-}
-
-.form-div{
-    width: 400px;
-    height: 250px;
-    background-color:rgb(255, 204, 0);
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid black;    
-}
-
-.message-tag{
-    position:absolute;
-    bottom: 50%;
-    
-}
-
-.play-button{
-    position: absolute;
-    left: 25%;
-    bottom:30%;
-    width: 200px;
-    height:40px;
-    color: gold;
-    font-size: 20px;
-    font-weight: bold;
-    text-shadow: 20px  black ;
-    background-color: rgb(255, 0, 0);
-    border: 2px solid white;
-
-}
-
-
-.modal-container{
-    width: 400px;
-    height: 355px;
-    background-color: gold;
-    position: absolute; 
-    bottom: 24%;
-    left: 33%;  
-    display:flex;
-    justify-content: center; 
-    align-items: center; 
-    border-radius: 20px;
-    border: 5px solid white;
-}
-
-.player{
-    margin-top:20px;
-    width: 300px;
-    display: flex;
     justify-content: space-between;
-    /* background-color: aqua; */
-
-}
-
-.label-name{
-    font-size: 25px;
     font-weight: bold;
+    font-size: 5vh;
     color: white;
-    -webkit-text-stroke-width: 0.5px;   
+    -webkit-text-stroke-width: 0.5px;
     -webkit-text-stroke-color: black;
-    text-shadow: 2px 2px 3px black ;
-
-}
-
-.start-button{
-    margin-top: 20px;
-    color: white;
-    background-color: red;
-    font-size: 25px;
-    font-weight: bolder;
-    border-color: aliceblue;
-    width:100px;
-    height: 50px;
-    box-shadow: 2px 2px 3px rgb(0, 0, 0);
-}
-
-.button{
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    
-}
-
-.score-board{
-    /* background-color: red; */
-    position: absolute;
-    top:0%;
-    width:1000px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    /* border: 2px solid black; */
-    padding-left: 50px;
-    padding-right: 50px;
-    margin-top: 20px ;
-}
-
-.player-name-one{
-    /* background-color: gold;
-    border:2px solid white; */
-    width: 300px;
-    height: 50px;
-    display:flex;
-    align-items: center;
-    justify-content: space-between;
-    font-weight: bold;
-    font-size: 30px;
-    padding-left: 10px; 
-    padding-right: 20px; 
-    color: white;
-    -webkit-text-stroke-width: 0.5px;   
-    -webkit-text-stroke-color: black;
-    text-shadow: 2px 2px 3px black ;
-}
-
-.name{
-    /* width: 200px;
-    overflow: hidden; */
-}
-
-
-.player-name-two{
-    /* background-color: gold;
-    border:2px solid white; */
-    width: 300px;
-    height: 50px;
-    display:flex;
-    align-items: center;
-    justify-content: space-between;
-    font-weight: bold;
-    font-size: 30px;
-    padding-left: 10px; 
-    padding-right: 20px; 
-    color: white;
-    -webkit-text-stroke-width: 0.5px;   
-    -webkit-text-stroke-color: black;
-    text-shadow: 2px 2px 3px black ;
+    text-shadow: 0.2vw 0.2vw 0.3vw black;
 }
