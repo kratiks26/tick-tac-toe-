@@ -20,7 +20,7 @@
 
 .box {
   width: 7.8vw;
-  height: 7.8vw;
+  height: 17vh;
   border: 0.4vh solid rgb(65, 65, 65);
   display: flex;
   justify-content: center;
